@@ -1,7 +1,7 @@
 package routers
 import (
 "github.com/gorilla/mux"
-"github.com/anas-infobell/book_store/pkg/controllers"
+"github.com/anas-infobell/book/pkg/controllers"
 )
 var registerBookStoreRouters = func (router *mux.Router)  {
 	router.HandleFunc("/book/",controllers.CreateBook),Methods("POST")

@@ -6,8 +6,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/anas-infobell/book_store.git/pkg/models"
-	"github.com/anas-infobell/book_store/pkg/models"
+	"github.com/anas-infobell/book/pkg/models"
 	"github.com/gorilla/mux"
 )
 

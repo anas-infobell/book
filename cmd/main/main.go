@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"github.com/gorilla/mux"
 	"github.com/jinzhu/gorm/dialects/mysql"
-	"github.com/anas-infobell/book_store/pkg/routes"
+	"github.com/anas-infobell/book/pkg/routes"
 )
 func main(){
 r := mux.NewRouter()

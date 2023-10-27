@@ -1,19 +1,20 @@
 package config
+
 import (
 	"github.com/jinzhu/gorm"
-	"github.com/jinzhu/gorm/dialects/mysql"
+	_ "github.com/jinzhu/gorm/dialects/mysql" // Import the MySQL dialect
 )
 
-var {
-	db *gorm.DB
-}
-func Connect()  {
-	d, err :=gorm:open("mysql","")
-	if err != nil{
+var db *gorm.DB
+
+func Connect() {
+	d, err := gorm.Open("mysql", "root:@tcp(localhost:3306)/users_db?charset=utf8&parseTime=True&loc=Local")
+	if err != nil {
 		panic(err)
 	}
 	db = d
 }
-func GetDB() *gorm.DB{
+
+func GetDB() *gorm.DB {
 	return db
 }

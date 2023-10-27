@@ -1,7 +1,7 @@
 package models
 
 import (
-	"github.com/anas-infobell/book_store/pkg/config"
+	"github.com/anas-infobell/book/pkg/config"
 	"github.com/jinzhu/gorm"
 )
 
